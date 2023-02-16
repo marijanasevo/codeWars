@@ -17,13 +17,9 @@
 
 const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-Object.defineProperty( Array.prototype, "containsAll", { value: function containsAll(a) {
-  for (let i = 0; i < a.length; i++) {
-    if (this.indexOf(a[i]) == -1) return false;
-  }
-  
-  return true;
-} } );
+Object.defineProperty(Array.prototype, 'containsAll', { value: function containsAll(a) {
+  return a.every(argumentItem => this.includes(argumentItem));
+}});
 
 items.containsAll([1, 2, 3]);
 items.containsAll([1, 5, 13]);
