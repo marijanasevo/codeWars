@@ -7,7 +7,7 @@ This repository contains my solutions to the [codewars](https://www.codewars.com
 — and optimization for (readability|efficiency) in mind. 
 
 ## One Challenge at a Time </>
-These challenges can be daunting, but not knowing an answer was often the moment I learnd the most. I embrace these moments as opportunities which is why I'm excited to see what new challenge will come my way.
+These challenges can be daunting, but not knowing an answer was often the moment I learned the most. I embrace these moments as opportunities which is why I'm excited to see what new challenge will come my way.
 
 ## Contributing 🤝 
 If you notice any issues with my solutions or have a more efficient solution, I welcome any constructive feedback. Feel free to create a pull request or raise an issue.
