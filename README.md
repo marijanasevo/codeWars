@@ -9,6 +9,23 @@ This repository contains my solutions to the [codewars](https://www.codewars.com
 ## One Challenge at a Time </>
 These challenges can be daunting, but not knowing an answer was often the moment I learned the most. I embrace these moments as opportunities which is why I'm excited to see what new challenge will come my way.
 
+## Navigate the Repository
+
+This repository contains a collection of solutions for Codewars programming challenges, which are organized by difficulty level. Each level has its own folder, and within each level folder, you can find separate JavaScript files containing solutions (+ tests or descriptions) for the corresponding katas. Each JavaScript file is named after the corresponding kata.
+
+The difficulty level of a kata is determined by its "kyu" rating, which ranges from 8 kyu (the easiest) to 1 kyu (the most difficult). The higher the kyu rating, the more complex and challenging the kata is likely to be.
+
+Here's a breakdown of the kyu ratings and what they represent:
+
+- 8 kyu: Beginner
+- 7 kyu: Beginner/Intermediate
+- 6 kyu: Intermediate
+- 5 kyu: Intermediate/Advanced
+- 4 kyu: Advanced
+- 3 kyu: Advanced/Expert
+- 2 kyu: Expert
+- 1 kyu: Expert/Unbeatable
+
 ## Contributing 🤝 
 If you notice any issues with my solutions or have a more efficient solution, I welcome any constructive feedback. Feel free to create a pull request or raise an issue.
 
