@@ -9,20 +9,16 @@
 // [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 // [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
-// PREP
-// P: an array of numbers
-// R: always one whole, positive num
-
 function findOdd(arr) {
-  // const itemRepeats = {};
+  const itemRepeats = {};
 
-  // arr.forEach(num => {
-  //   (typeof itemRepeats[num] != 'number') ? itemRepeats[num] = 1 : ++itemRepeats[num];
-  // });
+  arr.forEach(num => {
+    (typeof itemRepeats[num] != 'number') ? itemRepeats[num] = 1 : ++itemRepeats[num];
+  });
 
-  // for (let prop in itemRepeats) {
-  //   if (itemRepeats[prop] % 2) return +prop;
-  // }
+  for (let prop in itemRepeats) {
+    if (itemRepeats[prop] % 2) return +prop;
+  }
 
   // return arr.reduce((a, b) => {
   //   return a ^ b;
