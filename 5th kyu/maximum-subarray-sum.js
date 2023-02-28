@@ -16,6 +16,14 @@ let maxSequence = arr => {
   });
 
   return maxNum;
+
+
+  // let currentSum = 0;
+
+  // return arr.reduce((maxSum, num) => {
+  //   currentSum = Math.max(num + currentSum, 0);
+  //   return Math.max(maxSum, currentSum);
+  // });
 };
 
 maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]); // 6
