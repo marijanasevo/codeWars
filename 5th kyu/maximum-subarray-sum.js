@@ -9,8 +9,8 @@
 let maxSequence = arr => {
   let maxNum = 0, currentNum = 0;
 
-  arr.forEach(element => {
-    currentNum += element;
+  arr.forEach(item => {
+    currentNum += item;
     if (currentNum > maxNum) maxNum = currentNum;
     if (currentNum < 0) currentNum = 0;
   });
