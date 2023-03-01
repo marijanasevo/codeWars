@@ -4,9 +4,9 @@
 
 // The following are examples of expected output values:
 
-// rgbToHex(255, 255, 255); // returns FFFFFF
-// rgbToHex(255, 255, 300); // returns FFFFFF
-// rgbToHex(0,0,0); // returns 000000
+rgb(255, 255, 255); // returns FFFFFF
+rgb(255, 255, 300); // returns FFFFFF
+rgb(0,0,0); // returns 000000
 rgb(148, 0, 211); // returns 9400D3
 
 function rgb(r, g, b) {
@@ -14,9 +14,14 @@ function rgb(r, g, b) {
 }
 
 function rgbToHex(num) {
-  return ('0' + Number(num).toString(16)).slice(-2).toUpperCase();
-}
+  // out of range cases
+  if (num > 255) num = 255;
+  if (num < 0) num = 0;
 
+  return ('0' + num.toString(16))
+            .slice(-2)
+            .toUpperCase();
+}
 
 
 // code could be optimized for better space and time complexity
