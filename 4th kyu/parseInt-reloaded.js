@@ -40,7 +40,7 @@ function parseInt(string) {
 
   if (string.match(/\sand\s/)) string = string.replace(/\sand\s/g, ' ');
 
-  if (string.includes('thousand')) {
+  if (string.match(/\sthousand\s/)) {
     const [thousand, hundred] = string.split(' thousand ');
     unitNum.thousand = getNumber(thousand);
     unitNum.hundred = getNumber(hundred);
