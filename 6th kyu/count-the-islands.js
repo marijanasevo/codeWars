@@ -21,15 +21,6 @@ function countIslands(matrix){
   let islandCount = 0;
   const offsets = [[0, -1], [0, 1], [-1, -1], [-1, 0], [-1, 1], [1, -1], [1, 0], [1, 1]];
 
-  function searchIsland (rowInd, colInd) {
-    if (matrix[rowInd]?.[colInd]) matrix[rowInd][colInd] = 0; 
-    else return;
-
-    offsets.forEach((offset) => {
-      searchIsland(rowInd + offset[0], colInd + offset[1]);
-    })
-  };
-
   matrix.forEach((row, rowIndex) => {
      row.forEach((field, colIndex) => {
        if (field) {
@@ -38,6 +29,15 @@ function countIslands(matrix){
        }
      });
   });
+
+  function searchIsland (rowInd, colInd) {
+    if (matrix[rowInd]?.[colInd]) matrix[rowInd][colInd] = 0; 
+    else return;
+
+    offsets.forEach((offset) => {
+      searchIsland(rowInd + offset[0], colInd + offset[1]);
+    })
+  };
 
   return islandCount;
 }
