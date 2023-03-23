@@ -10,11 +10,8 @@ function sortArray(array) {
   oddNumbersArray.sort((a, b) => a - b);
 
   return array.map(num => {
-    if (num % 2 === 0) { // if the number is even, leave it as is
-      return num;
-    } else { // if the number is odd, replace it with the next smallest odd number from the sorted array
-      return oddNumbersArray.shift();
-    }
+    // if the number is even, leave it as is, otherwise replace it with the next smallest odd number from the sorted array
+    return (num % 2 === 0) ? num : oddNumbersArray.shift();
   });
 }
 
