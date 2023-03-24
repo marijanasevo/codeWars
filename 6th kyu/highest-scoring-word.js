@@ -15,14 +15,14 @@ function high(string) {
   let highestScore = 0;
   let highestScoringWord = '';
 
-  for (let i = 0; i < words.length; i++) {
-    const score = words[i]
+  for (let word of words) {
+    const score = word
       .split('')
       .reduce((acc, letter) => acc + letter.charCodeAt(0) - 96, 0);
 
     if (score > highestScore) {
       highestScore = score;
-      highestScoringWord = words[i];
+      highestScoringWord = word;
     }
   }
 
