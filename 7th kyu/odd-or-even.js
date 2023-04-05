@@ -16,7 +16,8 @@
 // Have fun!
 
 function oddOrEven(array) {
-  //enter code here
+  const sum = array.reduce((sum, currentNum) => sum + currentNum, 0);
+  return (sum % 2 === 0) ? 'even' : 'odd';
 }
 
 oddOrEven([0]); // 'even'
